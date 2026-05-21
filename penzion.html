@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PENZION | OSTROV U STŘÍBRA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f1ea; 
+            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            color: #111111;
+        }
+        .border-lokal { border-color: #111111; }
+        .header-uppercase { text-transform: uppercase; letter-spacing: 0.05em; }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col uppercase">
+
+    <nav class="sticky top-0 z-50 bg-[#f4f1ea] border-b-4 border-lokal px-6 py-4 flex justify-between items-center">
+        <div class="flex-1"></div>
+        <div class="flex-1 text-center">
+            <a href="index.html" class="text-3xl font-black tracking-tighter hover:text-gray-500 transition">OSTROV.</a>
+        </div>
+        <div class="flex-1 flex justify-end items-center gap-4 md:gap-8 font-extrabold text-[10px] md:text-sm tracking-widest uppercase">
+            <a href="restaurace.html" class="hover:underline decoration-4 underline-offset-4 whitespace-nowrap">Restaurace</a>
+            <a href="penzion.html" class="underline decoration-4 underline-offset-4 whitespace-nowrap">Penzion</a>
+            <a href="o-nas.html" class="hover:underline decoration-4 underline-offset-4 whitespace-nowrap">O Nás</a>
+        </div>
+    </nav>
+
+    <header class="relative border-b-4 border-lokal h-[40vh] flex items-center justify-center overflow-hidden bg-black">
+        <div class="absolute inset-0 opacity-60">
+            <img src="uvod.jpg" alt="Penzion Ostrov" class="w-full h-full object-cover brightness-75">
+        </div>
+        <h1 class="relative z-10 text-[10vw] md:text-[8vw] font-black tracking-tighter text-[#f4f1ea] header-uppercase">UBYTOVÁNÍ</h1>
+    </header>
+
+    <main class="flex-grow">
+        
+        <section class="p-8 md:p-16 lg:p-24 bg-[#f4f1ea] border-b-4 border-lokal">
+            <h2 class="text-4xl md:text-5xl font-black mb-12 header-uppercase text-center">Ceník a služby</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
+                <div class="bg-white border-4 border-lokal p-8 shadow-[10px_10px_0_0_#111111]">
+                    <h3 class="text-2xl font-black mb-2 header-uppercase">Klasické pokoje</h3>
+                    <p class="font-bold text-gray-500 mb-6 text-sm tracking-wide">4x dvoulůžkový | 2x třílůžkový | 1x čtyřlůžkový</p>
+                    <div class="space-y-4 font-bold text-lg">
+                        <div class="flex justify-between border-b-2 border-gray-200 pb-2"><span>1 osoba</span><span>900 Kč / noc</span></div>
+                        <div class="flex justify-between border-b-2 border-gray-200 pb-2"><span>2 osoby</span><span>1 200 Kč / noc</span></div>
+                        <div class="flex justify-between border-b-2 border-gray-200 pb-2"><span>3 osoby</span><span>1 600 Kč / noc</span></div>
+                        <div class="flex justify-between border-b-2 border-gray-200 pb-2"><span>4 osoby</span><span>2 000 Kč / noc</span></div>
+                    </div>
+                </div>
+
+                <div class="bg-white border-4 border-lokal p-8 shadow-[10px_10px_0_0_#111111]">
+                    <h3 class="text-2xl font-black mb-2 header-uppercase">Apartmán</h3>
+                    <p class="font-bold text-gray-500 mb-6 text-sm tracking-wide">1x 2-4 lůžkový apartmán s kuchyňskou linkou</p>
+                    <div class="space-y-4 font-bold text-lg">
+                        <div class="flex justify-between border-b-2 border-gray-200 pb-2"><span>1 osoba</span><span>1 000 Kč / noc</span></div>
+                        <div class="flex justify-between border-b-2 border-gray-200 pb-2"><span>2 osoby</span><span>1 300 Kč / noc</span></div>
+                        <div class="flex justify-between border-b-2 border-gray-200 pb-2"><span>3 osoby</span><span>1 700 Kč / noc</span></div>
+                        <div class="flex justify-between border-b-2 border-gray-200 pb-2"><span>4 osoby</span><span>2 200 Kč / noc</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="border-2 border-lokal p-6 bg-white">
+                    <h4 class="font-black uppercase mb-3 text-lg">Příjezd / Odjezd</h4>
+                    <p class="text-sm font-bold opacity-80 normal-case leading-relaxed">
+                        <span class="uppercase text-black">Check-in:</span> 14:00 - 20:00<br>
+                        <span class="text-xs text-gray-500">(Pozdější příjezd / víkend po domluvě)</span><br><br>
+                        <span class="uppercase text-black">Check-out:</span> do 11:00
+                    </p>
+                </div>
+                <div class="border-2 border-lokal p-6 bg-white">
+                    <h4 class="font-black uppercase mb-3 text-lg">Snídaně (Po-Pá)</h4>
+                    <p class="text-sm font-bold opacity-80 normal-case leading-relaxed">
+                        Cena: <span class="text-black uppercase">120 Kč / osoba</span><br>
+                        Podáváme: 7:00 - 9:00<br><br>
+                        <span class="text-xs text-red-600 uppercase">O víkendu snídaně nepodáváme.</span>
+                    </p>
+                </div>
+                <div class="border-2 border-lokal p-6 bg-white">
+                    <h4 class="font-black uppercase mb-3 text-lg">Důležité info</h4>
+                    <p class="text-sm font-bold opacity-80 normal-case leading-relaxed">
+                        Ceny jsou konečné (včetně DPH).<br><br>
+                        <span class="uppercase text-black">Děti do 3 let</span><br>
+                        Mají u nás ubytování zcela zdarma.
+                        
+                        Dogs friendly. Nekuřácké prostory 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 border-b-4 border-lokal bg-[#332418] text-[#f4f1ea]">
+            <div class="p-8 md:p-16 lg:p-24 flex flex-col justify-center">
+                <h2 class="text-4xl md:text-5xl font-black mb-6 header-uppercase leading-none">Váš klidný<br>přístav</h2>
+                <p class="font-medium text-base md:text-lg leading-relaxed mb-6 opacity-90 normal-case">
+                    Nabízíme Vám ubytování v 8 pokojích s celkovou kapacitou 20 lůžek (možnost rozšířit až na 22). Samozřejmostí je WiFi, LCD televize, vlastní sociální zařízení a možnost oddělených nebo manželských lůžek.
+                </p>
+                <p class="font-medium text-base md:text-lg leading-relaxed opacity-90 normal-case">
+                    V přízemí se nachází restaurace (15 a 40 míst) s letní venkovní terasou.
+                </p>
+            </div>
+            <div class="h-[50vh] md:h-auto border-t-4 md:border-t-0 md:border-l-4 border-lokal overflow-hidden">
+                <img src="penzion-1.jpg" alt="Penzion" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+            </div>
+        </section>
+
+        <section class="border-b-4 border-lokal bg-white p-8 md:p-16 text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-4 uppercase">Rezervujte si svůj pokoj</h2>
+            <p class="font-bold text-gray-500 uppercase tracking-widest text-sm normal-case mb-8">Napište nám, obratem se Vám ozveme s potvrzením termínu.</p>
+            
+            <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 lg:p-16 border-4 border-[#111111] shadow-[12px_12px_0_0_#111111]">
+                <form action="https://formspree.io/f/mnjrpqla" method="POST" class="flex flex-col gap-8 text-left text-[#111111]">
+                    
+                    <div>
+                        <label class="block font-black uppercase text-sm tracking-widest mb-2 text-gray-800">Jméno a příjmení</label>
+                        <input type="text" name="jmeno" required class="w-full bg-[#f4f1ea] border-b-4 border-[#111111] px-4 py-3 font-bold text-lg focus:bg-gray-200 focus:outline-none transition-colors">
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block font-black uppercase text-sm tracking-widest mb-2 text-gray-800">E-mail</label>
+                            <input type="email" name="email" required class="w-full bg-[#f4f1ea] border-b-4 border-[#111111] px-4 py-3 font-bold text-lg focus:bg-gray-200 focus:outline-none transition-colors">
+                        </div>
+                        <div>
+                            <label class="block font-black uppercase text-sm tracking-widest mb-2 text-gray-800">Telefon</label>
+                            <input type="tel" name="telefon" class="w-full bg-[#f4f1ea] border-b-4 border-[#111111] px-4 py-3 font-bold text-lg focus:bg-gray-200 focus:outline-none transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block font-black uppercase text-sm tracking-widest mb-2 text-gray-800">Datum příjezdu</label>
+                            <input type="date" name="prijezd" required class="w-full bg-[#f4f1ea] border-b-4 border-[#111111] px-4 py-3 font-bold text-lg uppercase focus:bg-gray-200 focus:outline-none transition-colors">
+                        </div>
+                        <div>
+                            <label class="block font-black uppercase text-sm tracking-widest mb-2 text-gray-800">Datum odjezdu</label>
+                            <input type="date" name="odjezd" required class="w-full bg-[#f4f1ea] border-b-4 border-[#111111] px-4 py-3 font-bold text-lg uppercase focus:bg-gray-200 focus:outline-none transition-colors">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block font-black uppercase text-sm tracking-widest mb-2 text-gray-800">Kolik vás bude a máte nějaké přání?</label>
+                        <textarea name="zprava" rows="3" class="w-full bg-[#f4f1ea] border-b-4 border-[#111111] px-4 py-3 font-bold text-lg focus:bg-gray-200 focus:outline-none transition-colors resize-none"></textarea>
+                    </div>
+
+                    <button type="submit" class="bg-[#111111] text-[#f4f1ea] font-black px-8 py-5 uppercase tracking-widest hover:bg-[#f4f1ea] hover:text-[#111111] border-4 border-[#111111] transition-all duration-300 w-full mt-4 text-lg">
+                        Odeslat nezávaznou rezervaci
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="border-b-4 border-lokal bg-[#111111]">
+            <h2 class="text-4xl md:text-5xl font-black py-10 uppercase text-center bg-[#f4f1ea] border-b-4 border-lokal m-0">NAŠE POKOJE</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
+                <div class="aspect-[4/3] overflow-hidden relative">
+                    <img src="penzion-1.jpg" alt="Pokoj 1" class="w-full h-full object-cover transition duration-500 hover:scale-110 opacity-90 hover:opacity-100">
+                </div>
+                <div class="aspect-[4/3] overflow-hidden relative">
+                    <img src="penzion-2.jpg" alt="Pokoj 2" class="w-full h-full object-cover transition duration-500 hover:scale-110 opacity-90 hover:opacity-100">
+                </div>
+                <div class="aspect-[4/3] overflow-hidden relative">
+                    <img src="penzion-3.jpg" alt="Pokoj 3" class="w-full h-full object-cover transition duration-500 hover:scale-110 opacity-90 hover:opacity-100">
+                </div>
+                <div class="aspect-[4/3] overflow-hidden relative">
+                    <img src="penzion-4.jpg" alt="Apartmán" class="w-full h-full object-cover transition duration-500 hover:scale-110 opacity-90 hover:opacity-100">
+                </div>
+                <div class="aspect-[4/3] overflow-hidden relative">
+                    <img src="penzion-5.jpg" alt="Koupelna" class="w-full h-full object-cover transition duration-500 hover:scale-110 opacity-90 hover:opacity-100">
+                </div>
+                <div class="aspect-[4/3] overflow-hidden relative">
+                    <img src="penzion-6.jpg" alt="Společné prostory" class="w-full h-full object-cover transition duration-500 hover:scale-110 opacity-90 hover:opacity-100">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t-4 border-lokal bg-[#f4f1ea] text-[#111111] py-12 px-6 md:px-12 mt-auto">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-8">
+            <div class="text-sm">
+                <h4 class="font-black mb-2 uppercase tracking-widest text-xs opacity-70">Provozovatel</h4>
+                <p class="font-bold">Ostrov u Stříbra 3<br>349 01 Kostelec</p>
+            </div>
+            <div class="text-sm">
+                <h4 class="font-black mb-2 uppercase tracking-widest text-xs opacity-70">Fakturační údaje</h4>
+                <p class="font-bold">IČO: 01773101<br>DIČ: CZ01773101</p>
+            </div>
+            <div class="text-sm flex-shrink-0">
+                <h4 class="font-black mb-3 uppercase tracking-widest text-xs opacity-70">Hledáte na nás kontakt?</h4>
+                <a href="o-nas.html" class="inline-block bg-[#111111] text-[#f4f1ea] font-black px-6 py-3 uppercase tracking-widest hover:bg-[#f4f1ea] hover:text-[#111111] border-4 border-[#111111] transition-colors">
+                    O NÁS STRÁNKA
+                </a>
+            </div>
+            <div class="flex flex-col items-start lg:items-end gap-6 w-full lg:w-auto mt-4 lg:mt-0">
+                <div class="flex gap-4">
+                    <a href="https://instagram.com" target="_blank" class="hover:opacity-50 transition"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                    <a href="https://facebook.com" target="_blank" class="hover:opacity-50 transition"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg></a>
+                    <a href="https://tiktok.com" target="_blank" class="hover:opacity-50 transition"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93v7.2c0 1.96-.5 3.96-1.64 5.53-1.49 2.04-3.83 3.25-6.36 3.12-2.82-.12-5.46-2.07-6.24-4.81-.8-2.76.13-5.87 2.45-7.75 2.1-1.68 4.96-2.06 7.43-1.12v4.06c-1.14-.36-2.43-.28-3.46.33-1.03.62-1.74 1.74-1.77 2.94-.04 1.25.68 2.48 1.76 3.04 1.2.62 2.74.52 3.82-.32 1.13-.88 1.68-2.3 1.68-3.76v-14.1z"/></svg></a>
+                    <a href="https://youtube.com" target="_blank" class="hover:opacity-50 transition"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+                </div>
+                <a href="index.html" class="text-4xl md:text-5xl font-black tracking-tighter hover:text-gray-500 transition">OSTROV.</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
